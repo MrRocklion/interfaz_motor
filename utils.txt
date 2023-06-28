@@ -1,2 +1,5 @@
 python -m venv myenv
 pip install pyside6
+
+// enlaces de interes
+https://doc.qt.io/qtforpython-6/tutorials/basictutorial/uifiles.html
