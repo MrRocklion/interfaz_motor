@@ -1,7 +1,6 @@
 import sys
-from PySide6.QtUiTools import QUiLoader
-from PySide6.QtWidgets import QApplication
-from PySide6.QtCore import QFile, QIODevice
+from PyQt5 import QtWidgets, uic
+import sys
 
 
 fusible_1 = True
@@ -79,26 +78,19 @@ def handleBtn6():
         window.lab6.setText("OFF")
         window.lab6.setStyleSheet("color: red")
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
 
-    ui_file_name = "mainwindow.ui"
-    ui_file = QFile(ui_file_name)
-    if not ui_file.open(QIODevice.ReadOnly):
-        print(f"Cannot open {ui_file_name}: {ui_file.errorString()}")
-        sys.exit(-1)
-    loader = QUiLoader()
-    window = loader.load(ui_file)
-    window.btn1.clicked.connect(lambda:handleBtn1() )
-    window.btn2.clicked.connect(lambda:handleBtn2() )
-    window.btn3.clicked.connect(lambda:handleBtn3() )
-    window.btn4.clicked.connect(lambda:handleBtn4() )
-    window.btn5.clicked.connect(lambda:handleBtn5() )
-    window.btn6.clicked.connect(lambda:handleBtn6() )
-    ui_file.close()
-    if not window:
-        print(loader.errorString())
-        sys.exit(-1)
-    window.show()
 
-    sys.exit(app.exec())
+class Ui(QtWidgets.QMainWindow):
+    def __init__(self):
+        super(Ui, self).__init__() # Call the inherited classes __init__ method
+        uic.loadUi('mainwindow.ui', self) #
+        self.show() # Show the GUI
+app = QtWidgets.QApplication(sys.argv)
+window = Ui()
+window.btn1.clicked.connect(lambda:handleBtn1() )
+window.btn2.clicked.connect(lambda:handleBtn2() )
+window.btn3.clicked.connect(lambda:handleBtn3() )
+window.btn4.clicked.connect(lambda:handleBtn4() )
+window.btn5.clicked.connect(lambda:handleBtn5() )
+window.btn6.clicked.connect(lambda:handleBtn6() )
+app.exec_()
