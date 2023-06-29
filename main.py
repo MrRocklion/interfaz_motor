@@ -1,6 +1,11 @@
 import sys
 from PyQt5 import QtWidgets, uic
+import RPi.GPIO as GPIO
 import sys
+
+GPIO.setmode(GPIO.BOARD)
+#configuracion GPIO
+GPIO.setup(18,GPIO.OUT)
 
 
 fusible_1 = True
@@ -16,9 +21,11 @@ def handleBtn1():
     if fusible_1:
         window.lab1.setText("ON")
         window.lab1.setStyleSheet("color: green")
+        GPIO.output(18, True)
     else:
         window.lab1.setText("OFF")
         window.lab1.setStyleSheet("color: red")
+        GPIO.output(18, False)
 
 def handleBtn2():
 
