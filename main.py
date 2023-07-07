@@ -27,6 +27,13 @@ fusible_4 = True
 fusible_5 = True
 fusible_6 = True
 
+GPIO.output(pin_1, True)
+GPIO.output(pin_2, True)
+GPIO.output(pin_3, True)
+GPIO.output(pin_4, True)
+GPIO.output(pin_5, True)
+GPIO.output(pin_6, True)
+
 def handleBtn1():
     global fusible_1
     fusible_1 = not fusible_1
@@ -120,6 +127,4 @@ window.btn1.clicked.connect(lambda:handleBtn1() )
 window.btn2.clicked.connect(lambda:handleBtn2() )
 window.btn3.clicked.connect(lambda:handleBtn3() )
 window.btn4.clicked.connect(lambda:handleBtn4() )
-window.btn5.clicked.connect(lambda:handleBtn5() )
-window.btn6.clicked.connect(lambda:handleBtn6() )
 app.exec_()
