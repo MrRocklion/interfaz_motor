@@ -29,30 +29,6 @@
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <layout class="QGridLayout" name="gridLayout">
-         <item row="4" column="1">
-          <widget class="QLabel" name="lab5">
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>120</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>30</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: green;</string>
-           </property>
-           <property name="text">
-            <string>ON</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
          <item row="1" column="1">
           <widget class="QLabel" name="lab2">
            <property name="font">
@@ -69,101 +45,6 @@
            <property name="alignment">
             <set>Qt::AlignCenter</set>
            </property>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <widget class="QPushButton" name="btn5">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>90</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton{
-background-color: rgb(88, 214, 141 );
-border-radius:3px;
-color:white
-}
-
-
-QPushButton:hover{
-border-radius:0px;
-background-color: rgb(130, 224, 170);
-border-radius:3px;
-color:white
-}
-
-QPushButton:pressed{
-	border-radius:0px;
-background-color: rgb(88, 214, 141 );
-border-radius:3px;
-color:white
-}
-</string>
-           </property>
-           <property name="text">
-            <string>BOBINA</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="4">
-          <widget class="QFrame" name="frame_2">
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_3">
-            <property name="spacing">
-             <number>0</number>
-            </property>
-            <property name="leftMargin">
-             <number>0</number>
-            </property>
-            <property name="topMargin">
-             <number>0</number>
-            </property>
-            <property name="rightMargin">
-             <number>0</number>
-            </property>
-            <property name="bottomMargin">
-             <number>0</number>
-            </property>
-            <item>
-             <widget class="QLabel" name="label_2">
-              <property name="font">
-               <font>
-                <family>Roboto Medium</family>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Anderson Peralta</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_4">
-              <property name="font">
-               <font>
-                <family>Roboto Medium</family>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Bryan Illisaca</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
           </widget>
          </item>
          <item row="3" column="3" rowspan="3" colspan="2">
@@ -222,7 +103,7 @@ color:white
            </property>
            <property name="font">
             <font>
-             <pointsize>20</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="styleSheet">
@@ -249,23 +130,7 @@ color:white
 </string>
            </property>
            <property name="text">
-            <string>ALTERNADOR</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3">
-          <widget class="QLabel" name="label_3">
-           <property name="font">
-            <font>
-             <family>Roboto Black</family>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(235, 152, 78);</string>
-           </property>
-           <property name="text">
-            <string>Integrantes:</string>
+            <string>SISTEMA DE CARGA</string>
            </property>
           </widget>
          </item>
@@ -279,7 +144,7 @@ color:white
            </property>
            <property name="font">
             <font>
-             <pointsize>20</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="styleSheet">
@@ -306,7 +171,7 @@ color:white
 </string>
            </property>
            <property name="text">
-            <string>BOMBA </string>
+            <string>SISTEMA DE ALIMENTACION</string>
            </property>
           </widget>
          </item>
@@ -357,7 +222,7 @@ color:white
            </property>
            <property name="font">
             <font>
-             <pointsize>20</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="styleSheet">
@@ -384,7 +249,7 @@ color:white
 </string>
            </property>
            <property name="text">
-            <string>DISTRIBUIDOR</string>
+            <string>SISTEMA DE ENCENDIDO</string>
            </property>
           </widget>
          </item>
@@ -392,6 +257,19 @@ color:white
           <widget class="QLabel" name="label_6">
            <property name="text">
             <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3" colspan="2">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../../../Desktop/download.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
            </property>
           </widget>
          </item>

@@ -126,5 +126,5 @@ window = Ui()
 window.btn1.clicked.connect(lambda:handleBtn1() )
 window.btn2.clicked.connect(lambda:handleBtn2() )
 window.btn3.clicked.connect(lambda:handleBtn3() )
-window.btn4.clicked.connect(lambda:handleBtn4() )
+
 app.exec_()
