@@ -59,7 +59,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../../../Desktop/automotriz.jpg</pixmap>
+            <pixmap>auto.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -266,7 +266,7 @@ color:white
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../../../Desktop/download.png</pixmap>
+            <pixmap>logo.png</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
